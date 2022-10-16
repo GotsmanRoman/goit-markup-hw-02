@@ -1,18 +1,11 @@
 /* global styles start */
-* {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
 body {
   width: 1600px;
   margin: 0 auto;
   box-sizing: border-box;
 
-
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  line-height: 1.1;
   color: var(--black-color);
 }
 :root {
@@ -25,10 +18,9 @@ body {
 }
 /* global styles end */
 
-
-
 /* header section start */
 .header {
+
   display: inline-block;
   width: 1170px;
   height: 80px;
@@ -42,6 +34,7 @@ body {
   font-size: 26px;
   font-family: Raleway;
   font-weight: 700;
+  line-height: 1.19;
 }
 .logo-first-part {
   color: var(--blue-color);
@@ -53,6 +46,7 @@ body {
   color: var(--white-color);
 }
 .header-nav {
+
   height: 100%;
   display: inline-block;
   vertical-align: middle;
@@ -60,10 +54,14 @@ body {
 
 }
 .header-contacts-list {
+  margin: 0;
+  padding: 0;
   display: inherit;
   height: 16px;
-  margin-left: 340px;
+  margin-left: 330px;
   font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 a {
   text-decoration: none;
@@ -76,7 +74,6 @@ a:focus-visible {
 li {
   display: inline-block;
   list-style: none;
-  
 }
 li a {
   color: var(--grey-color);
@@ -87,8 +84,12 @@ li a:hover {
   color: var(--blue-color);
 }
 .header-links-list {
+  margin: 0;
+  padding: 0;
   padding-top: 32px;
   font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .header-links-list li:not(:last-child) {
   margin-right: 50px;
@@ -99,7 +100,6 @@ li a:hover {
 
 .header-link {
   color: var(--black-color);
-  letter-spacing: 0.02em;
 }
 .header-link:hover {
   color: var(--blue-color);
@@ -127,6 +127,7 @@ h1 {
   font-weight: 900;
   line-height: 1.36;
   text-align: center;
+  letter-spacing: 0.06em;
   color: var(--white-color);
 }
 .hero-btn {
@@ -169,6 +170,11 @@ h1 {
   margin: 0 auto;
   margin-top: 94px;
 }
+.features-list {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 .features-list-item {
   height: 98px;
   width: 270px;
@@ -176,7 +182,13 @@ h1 {
   float: left;
 }
 .features-list-item h3 {
+  margin: 0;
+  padding: 0;
   margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 .features-list-item:last-child {
   margin-right: 0;
@@ -196,6 +208,9 @@ h1 {
   margin-top: 94px;
 }
 h2 {
+  margin: 0;
+  padding: 0;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -208,6 +223,8 @@ h2 {
 }
 .job-list,
 .team-list {
+  margin: 0;
+  padding: 0;
   margin-top: 50px;
 }
 .job-list-item {
@@ -258,20 +275,24 @@ h2 {
   margin-right: 0;
 }
 .team-list-item h3 {
+  margin: 0;
+  padding: 0;
   margin-top: 30px;
 
   text-align: center;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--black-color);
 }
 .team-list-item p {
+  margin: 0;
+  padding: 0;
   margin-top: 10px;
 
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--grey-color);
@@ -292,9 +313,14 @@ h2 {
 .address {
   margin-top: 20px;
 }
+.address-list {
+  margin: 0;
+  padding: 0;
+}
 .address-list-item {
   width: 100%;
   margin-bottom: 9px;
+  font-style: normal;
 }
 .address-list-item a {
   font-size: 14px;
@@ -320,10 +346,10 @@ h2 {
 }
 .filter-list {
   width: 575px;
-  height: 54px;
+  height: 38px;
   margin: 0 auto;
 }
-.filter-list-item {
+.filter-list-item:not(:last-child) {
   margin-right: 8px;
   float: left;
 }
@@ -338,12 +364,14 @@ h2 {
   width: 100%;
   padding: 6px 22px;
 
+  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
 
+  border: none;
   border-radius: 4px;
   background-color: var(--section-color);
 }
@@ -362,6 +390,7 @@ h2 {
 /* main section start */
 
 .projects-list {
+  padding: 0;
   width: 1170px;
   height: 1360px;
   margin: 0 auto;
